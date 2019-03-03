@@ -7,14 +7,14 @@
 	position: absolute;
 	top: 4rem;
 	right: 8rem;
-	transition: 1s;
 }
 
 .menuList {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	transition: 0.4s;
+	margin-top: 1.5rem;
+	transition: all 0.5s;
 
 	a {
 		color: $color-text;
@@ -34,6 +34,7 @@
 	border: none;
 	outline: none;
 	margin-bottom: 1rem;
+	transition: all 1s;
 
 	img {
 		height: 3rem;

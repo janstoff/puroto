@@ -2,7 +2,7 @@ import React, { Fragment } from 'React'
 
 import styles from './languageSelect.module.scss'
 import locales from '../config/locales'
-import { navigate } from '@reach/router'
+import { Link } from 'gatsby'
 
 interface LanguageSwitchProps {
 	readonly locale: string
@@ -16,16 +16,16 @@ const LanguageSwitch: React.SFC<LanguageSwitchProps> = ({
 	return (
 		<div className={styles.languageSwitchContainer}>
 			{languageOptions.map(language => (
-				<button
+				<Link
 					key={language}
-					disabled={language === locale}
 					className={
 						language === locale ? styles.switchBtnActive : styles.switchBtn
 					}
-					onClick={() => navigate(language === 'de' ? '/' : '/en/')}
+					style={{ textDecoration: 'none' }}
+					to={language === 'de' ? '/' : '/en/'}
 				>
 					{language}
-				</button>
+				</Link>
 			))}
 		</div>
 	)
