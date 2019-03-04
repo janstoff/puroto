@@ -21,7 +21,10 @@ const Footer = () => (
 	<footer className={styles.footer}>
 		<div className={styles.logoBox}>
 			<LocalizedLink to="/">
-				<img src={require('../styling/images/home-white.svg')} alt="Home" />
+				<img
+					src={require('../styling/images/Logo_vektor_rot.png')}
+					alt="Home"
+				/>
 			</LocalizedLink>
 		</div>
 		<div className={styles.main}>

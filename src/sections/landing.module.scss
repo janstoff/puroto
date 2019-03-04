@@ -32,20 +32,58 @@
 
 .headingMain {
 	display: block;
-	font-size: 6rem;
 	font-weight: 400;
-	letter-spacing: 3.5rem;
 
 	animation-name: moveInLeft;
 	animation-duration: 1s;
 	animation-timing-function: ease-out;
+
+	@media only screen and (max-width: 1824px) {
+		font-size: 4rem;
+		letter-spacing: 3.5rem;
+	}
+	@media only screen and (max-width: 1224px) {
+		font-size: 3.5rem;
+		letter-spacing: 3rem;
+	}
+	@media only screen and (max-width: 1040px) {
+		font-size: 3.5rem;
+		letter-spacing: 2.8rem;
+	}
+	@media only screen and (max-width: 768px) {
+		font-size: 3.5rem;
+		letter-spacing: 2rem;
+	}
+	@media only screen and (max-width: 432px) {
+		font-size: 3.2rem;
+		letter-spacing: 1.8rem;
+	}
 }
 
 .headingSub {
 	display: block;
-	font-size: 2rem;
 	font-weight: 400;
-	letter-spacing: 1.5rem;
+
+	@media only screen and (max-width: 1824px) {
+		font-size: 2rem;
+		letter-spacing: 2rem;
+	}
+	@media only screen and (max-width: 1224px) {
+		font-size: 1.5rem;
+		letter-spacing: 1.5rem;
+	}
+	@media only screen and (max-width: 1040px) {
+		font-size: 1.3rem;
+		letter-spacing: 1.3rem;
+	}
+	@media only screen and (max-width: 768px) {
+		font-size: 1.1rem;
+		letter-spacing: 1.2rem;
+	}
+	@media only screen and (max-width: 432px) {
+		font-size: 1rem;
+		letter-spacing: 1rem;
+	}
 
 	animation: moveInRight 1s ease-out; /* shorthand animation settings */
 }

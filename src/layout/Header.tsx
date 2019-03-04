@@ -12,7 +12,10 @@ interface HeaderProps {
 
 const HomeLink: React.SFC = () => (
 	<LocalizedLink className={styles.homeLink} to="/">
-		<img src={require('../styling/images/home.svg')} alt="Home" />
+		<img
+			src={require('../styling/images/Logo_vektor_O_rot-01.svg')}
+			alt="Home"
+		/>
 	</LocalizedLink>
 )
 
