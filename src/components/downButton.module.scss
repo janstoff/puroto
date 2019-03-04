@@ -3,8 +3,11 @@
 .downButton {
 	display: block;
 	position: absolute;
-	padding: 4rem;
-	right: 2rem;
+	bottom: 10rem;
+	right: 6rem;
+	@media only screen and (max-width: 768px) {
+		right: 3rem;
+	}
 	text-transform: uppercase;
 	text-decoration: none; /* no underline */
 	font-size: 2rem;

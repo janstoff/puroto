@@ -14,9 +14,14 @@
 	display: inline-block;
 	text-decoration: none; /* no underline */
 	position: absolute;
-	top: 4rem;
+	top: 3.5rem;
 	left: 4rem;
 	transition: all 1s;
+
+	@media only screen and (max-width: 768px) {
+		top: 1.5rem;
+		left: 2rem;
+	}
 
 	img {
 		height: 4rem;
