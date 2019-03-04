@@ -1,5 +1,5 @@
 module.exports = {
-	pathPrefix: '/selected-gadgets',
+	pathPrefix: '/puroto',
 	plugins: [
 		'gatsby-plugin-sass',
 		'gatsby-plugin-typescript',
