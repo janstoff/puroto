@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Raleway|Quicksand');
+
+/* basic style resetting */
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit; /* set box-sizing to be inherited across our entire app */
+}
+
+html {
+	font-size: 62.5%; /* 1rem = 10px, i.e. 10px if the browser default is 16px */
+	scroll-behavior: smooth;
+
+	@include respond(tiny) {
+		font-size: 37.5%; // 1rem = 6px
+	}
+	@include respond(small) {
+		font-size: 50%; // 1rem = 8px
+	}
+	@include respond(medium) {
+		font-size: 56.25%; // 1rem = 9px
+	}
+	@include respond(large) {
+		font-size: 75%; // 1rem = 12px
+	}
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}

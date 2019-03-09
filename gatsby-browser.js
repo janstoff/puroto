@@ -1,1 +1,2 @@
-import './src/styling/global.css'
+import './src/styling/global.scss'
+import './src/styling/mixins.scss'
