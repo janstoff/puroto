@@ -6,8 +6,8 @@ module.exports = {
 		{
 			resolve: 'gatsby-plugin-manifest',
 			options: {
-				name: 'Selected Gadgets',
-				short_name: 'SG',
+				name: 'puroto',
+				short_name: 'po',
 				start_url: '/',
 				background_color: '#353434',
 				theme_color: '#353434',
