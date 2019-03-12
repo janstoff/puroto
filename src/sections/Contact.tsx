@@ -8,6 +8,7 @@ import {
 import styles from './contact.module.scss'
 import PrimaryButton from '../components/PrimaryButton'
 import SectionLayout from '../layout/Section'
+import { CONTACT_EMAIL_ADDRESS } from '../config'
 
 interface ContactProps extends InjectedIntlProps {}
 
@@ -15,7 +16,10 @@ const Contact: React.FunctionComponent<ContactProps> = ({
 	intl: { formatMessage },
 }: ContactProps) => (
 	<SectionLayout id="contact">
-		<form action="https://formspree.io/jan.steinhoff@gmail.com" method="POST">
+		<form
+			action={`https://formspree.io/${CONTACT_EMAIL_ADDRESS}`}
+			method="POST"
+		>
 			<h1>
 				<Translated id="contact-header" />
 			</h1>
