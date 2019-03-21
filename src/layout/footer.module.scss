@@ -12,7 +12,10 @@
 	margin-bottom: 4rem;
 
 	img {
-		height: 6rem;
+		padding: 2rem;
+		background-color: whitesmoke;
+		height: 10rem;
+		border-radius: 12px;
 	}
 }
 
@@ -52,6 +55,7 @@
 	font-size: 1rem;
 	border-top: 1.2px solid $color-primary-light;
 	display: inline-block;
+	text-align: start;
 }
 
 .link {

@@ -34,6 +34,8 @@ const Footer = () => (
 			<div className={styles.elementWrapper}>
 				<div className={styles.copyright}>
 					<Translated id="footer-copyright" />
+					<Translated id="footer-general-disclaimer" />
+					<Translated id="footer-link-disclaimer" />
 				</div>
 			</div>
 		</div>
