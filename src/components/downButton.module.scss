@@ -3,9 +3,10 @@
 .downButton {
 	display: block;
 	position: absolute;
-	bottom: 10rem;
+	bottom: 5rem;
 	right: 6rem;
 	@media only screen and (max-width: 768px) {
+		bottom: 10rem;
 		right: 3rem;
 	}
 	text-transform: uppercase;

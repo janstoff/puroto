@@ -19,24 +19,24 @@ const renderSectionLinks = (sections: string[]) => (
 
 const Footer = () => (
 	<footer className={styles.footer}>
-		<div className={styles.logoBox}>
-			<LocalizedLink to="/">
-				<img
-					src={require('../styling/images/Logo_vektor_rot.png')}
-					alt="Home"
-				/>
-			</LocalizedLink>
-		</div>
 		<div className={styles.main}>
-			<div className={styles.elementWrapper}>
+			<div className={styles.logoWrapper}>
+				<LocalizedLink to="/">
+					<img
+						src={require('../styling/images/Logo_vektor_rot.png')}
+						alt="Home"
+					/>
+				</LocalizedLink>
+			</div>
+			<div className={styles.navWrapper}>
 				<div className={styles.navigation}>{renderSectionLinks(SECTIONS)}</div>
 			</div>
-			<div className={styles.elementWrapper}>
-				<div className={styles.copyright}>
-					<Translated id="footer-copyright" />
-					<Translated id="footer-general-disclaimer" />
-					<Translated id="footer-link-disclaimer" />
-				</div>
+		</div>
+		<div className={styles.disclaimerWrapper}>
+			<div className={styles.disclaimerText}>
+				<Translated id="footer-copyright" />
+				<Translated id="footer-general-disclaimer" />
+				<Translated id="footer-link-disclaimer" />
 			</div>
 		</div>
 	</footer>

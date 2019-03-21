@@ -1,7 +1,12 @@
 module.exports = {
 	pathPrefix: '/puroto',
 	plugins: [
-		'gatsby-plugin-sass',
+		{
+			resolve: 'gatsby-plugin-sass',
+			options: {
+				includePaths: ['src/styling/global.scss', 'src/styling/colors.scss'],
+			},
+		},
 		'gatsby-plugin-typescript',
 		{
 			resolve: 'gatsby-plugin-manifest',
