@@ -4,6 +4,7 @@ import { FormattedMessage as Translated } from 'react-intl'
 import { SECTIONS } from '../config'
 import styles from './footer.module.scss'
 import LocalizedLink from '../components/LocalizedLink'
+import CompanyModal from '../components/CompanyModal'
 
 const renderSectionLinks = (sections: string[]) => (
 	<ul>
@@ -38,6 +39,9 @@ const Footer = () => (
 				<Translated id="footer-general-disclaimer" />
 				<Translated id="footer-link-disclaimer" />
 			</div>
+		</div>
+		<div>
+			<CompanyModal />
 		</div>
 	</footer>
 )
