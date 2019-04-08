@@ -24,7 +24,7 @@ const Footer = () => (
 			<div className={styles.logoWrapper}>
 				<LocalizedLink to="/">
 					<img
-						src={require('../styling/images/Logo_vektor_rot.png')}
+						src={require('../styling/icons/Logo_vektor_rot.png')}
 						alt="Home"
 					/>
 				</LocalizedLink>

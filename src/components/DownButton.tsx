@@ -16,7 +16,7 @@ const DownButton: React.SFC<DownButtonProps> = ({
 	return (
 		<LocalizedLink className={styles.downButton} to={`/#${firstSection}`}>
 			{children}
-			<img src={require('../styling/images/down-arrow.svg')} alt="down" />
+			<img src={require('../styling/icons/down-arrow.svg')} alt="down" />
 		</LocalizedLink>
 	)
 }
