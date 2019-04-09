@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 import { Link } from 'gatsby'
 import { injectIntl, InjectedIntlProps } from 'react-intl'
 
@@ -11,7 +11,7 @@ interface LocalizedLinkProps extends InjectedIntlProps {
 	readonly style?: object
 }
 
-const LocalizedLink: React.SFC<LocalizedLinkProps> = ({
+const LocalizedLink: FunctionComponent<LocalizedLinkProps> = ({
 	to,
 	children,
 	intl: { locale },

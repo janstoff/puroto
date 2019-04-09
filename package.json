@@ -8,10 +8,10 @@
 		"clean": "rimraf public/* .cache/*",
 		"build": "gatsby build",
 		"dev": "gatsby develop",
-		"start": "npm run develop",
+		"start": "yarn develop",
 		"serve": "gatsby serve",
 		"test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-		"deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public"
+		"deploy": "yarn clean && gatsby build --prefix-paths && gh-pages -d public"
 	},
 	"dependencies": {
 		"@types/react-intl": "^2.3.17",

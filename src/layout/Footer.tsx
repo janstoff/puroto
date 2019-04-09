@@ -9,7 +9,7 @@ import CompanyModal from '../components/CompanyModal'
 const renderSectionLinks = (sections: string[]) => (
 	<ul>
 		{sections.map(section => (
-			<li>
+			<li key={section}>
 				<LocalizedLink className={styles.link} to={`/#${section}`}>
 					<Translated id={`${section}-header`} />
 				</LocalizedLink>

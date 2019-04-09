@@ -37,7 +37,7 @@ class NavigationMenu extends Component {
 					onMouseLeave={() => this.handleMenuClose()}
 				>
 					{sections.map(section => (
-						<LocalizedLink to={`/#${section}`}>
+						<LocalizedLink key={section} to={`/#${section}`}>
 							<Translated id={`${section}-header`} />
 						</LocalizedLink>
 					))}

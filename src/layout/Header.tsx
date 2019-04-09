@@ -1,16 +1,18 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 
 import styles from './header.module.scss'
 
 import LanguageSwitch from '../components/LanguageSelect'
 import NavigationMenu from '../components/NavigationMenu'
+import SocialLinks from '../components/SocialLinks'
 import LocalizedLink from '../components/LocalizedLink'
+import { SOCIAL_LINKS } from '../config'
 
 interface HeaderProps {
 	readonly locale: string
 }
 
-const HomeLink: React.SFC = () => (
+const HomeLink: FunctionComponent = () => (
 	<LocalizedLink className={styles.homeLink} to="/">
 		<img
 			src={require('../styling/icons/Logo_vektor_O_rot-01.svg')}
@@ -19,10 +21,11 @@ const HomeLink: React.SFC = () => (
 	</LocalizedLink>
 )
 
-const Header: React.SFC<HeaderProps> = ({ locale }: HeaderProps) => (
+const Header: FunctionComponent<HeaderProps> = ({ locale }: HeaderProps) => (
 	<div className={styles.header}>
-		<LanguageSwitch locale={locale} />
 		<HomeLink />
+		<SocialLinks socialLinks={SOCIAL_LINKS} />
+		<LanguageSwitch locale={locale} />
 		<NavigationMenu />
 	</div>
 )
