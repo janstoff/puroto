@@ -1,4 +1,4 @@
-export const APP_NAME = 'Selected Gadgets'
+export const APP_NAME = 'Puroto'
 
 export const SECTIONS = ['about', 'contact', 'company']
 

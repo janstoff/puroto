@@ -30,13 +30,17 @@ class NavigationMenu extends Component {
 	}
 
 	private renderSectionLinks(sections: string[]): JSX.Element | null {
+		const sectionsExcludingCompany = sections.filter(
+			section => section !== 'company'
+		)
+
 		if (this.state.menuOpen) {
 			return (
 				<ul
 					className={styles.menuList}
 					onMouseLeave={() => this.handleMenuClose()}
 				>
-					{sections.map(section => (
+					{sectionsExcludingCompany.map(section => (
 						<LocalizedLink key={section} to={`/#${section}`}>
 							<Translated id={`${section}-header`} />
 						</LocalizedLink>

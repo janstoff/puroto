@@ -9,7 +9,7 @@ const About: React.FunctionComponent = () => (
 		<h1>
 			<Translated id="about-headline" />
 		</h1>
-		<p>
+		<p className={styles.body}>
 			<Translated id="about-body" />
 		</p>
 	</SectionLayout>
