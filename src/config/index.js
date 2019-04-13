@@ -8,11 +8,11 @@ export const SOCIAL_LINKS = [
 	{
 		name: 'instagram',
 		iconName: 'instagram.svg',
-		linkTo: 'https://instagram.com',
+		linkTo: 'https://www.instagram.com/_puroto/',
 	},
 	{
 		name: 'linkedin',
 		iconName: 'linkedin.svg',
-		linkTo: 'https://linkedin.com',
+		linkTo: 'https://www.linkedin.com/company/14045990/',
 	},
 ]
