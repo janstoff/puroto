@@ -12,6 +12,9 @@ const About: React.FunctionComponent = () => (
 		<p className={styles.body}>
 			<Translated id="about-body" />
 		</p>
+		<div className={styles.imageContainer}>
+			<img src={require('../styling/images/scribble.png')} alt="store layout" />
+		</div>
 	</SectionLayout>
 )
 

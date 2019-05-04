@@ -1,11 +1,16 @@
-import React from 'react'
+import React from 'react';
 
-import styles from './section.module.scss'
+import styles from './section.module.scss';
 
-const SectionLayout = ({ id, children }) => (
-	<section id={id} className={styles.section}>
-		{children}
-	</section>
-)
+export interface SectionProps {
+  id: string;
+  children: any;
+}
 
-export default SectionLayout
+const SectionLayout = ({id, children}: SectionProps) => (
+  <section id={id} className={styles.section}>
+    {children}
+  </section>
+);
+
+export default SectionLayout;

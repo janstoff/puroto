@@ -1,116 +1,115 @@
 @import '../styling/colors.scss';
 
 .footer {
-	background-color: $color-primary-medium;
-	color: $color-text;
-	padding: 5rem 0;
-	font-size: 1.4rem;
-	margin-top: 6rem;
+  position: relative;
+  background-color: $color-primary-medium;
+  color: $color-text;
+  padding: 5rem 0;
+  font-size: 1.4rem;
+  margin-top: 6rem;
 }
 
 .main {
-	position: relative;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	margin-top: 5rem;
-	margin-bottom: 10rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
 }
 
 .logoWrapper {
-	position: absolute;
-	margin-bottom: 4rem;
+  position: absolute;
+  margin-bottom: 4rem;
 
-	img {
-		padding: 2rem;
-		background-color: whitesmoke;
-		height: 10rem;
-		border-radius: 12px;
+  img {
+    padding: 2rem;
+    background-color: whitesmoke;
+    height: 10rem;
+    border-radius: 12px;
 
-		@media only screen and (max-width: 432px) {
-			height: 8rem;
-		}
-	}
+    @media only screen and (max-width: 432px) {
+      height: 8rem;
+    }
+  }
 }
 
 .navWrapper {
-	position: relative;
-	width: 30%;
-	@media only screen and (max-width: 1824px) {
-		left: 20%;
-	}
-	@media only screen and (max-width: 1224px) {
-		left: 25%;
-	}
-	@media only screen and (max-width: 1040px) {
-		left: 28%;
-	}
-	@media only screen and (max-width: 768px) {
-		left: 32%;
-	}
-	@media only screen and (max-width: 432px) {
-		left: 35%;
-	}
+  position: relative;
+  width: 30%;
+  @media only screen and (max-width: 1824px) {
+    left: 20%;
+  }
+  @media only screen and (max-width: 1224px) {
+    left: 25%;
+  }
+  @media only screen and (max-width: 1040px) {
+    left: 28%;
+  }
+  @media only screen and (max-width: 768px) {
+    left: 32%;
+  }
+  @media only screen and (max-width: 432px) {
+    left: 35%;
+  }
 }
 
 .navigation {
-	max-width: 65%;
-	padding-top: 1rem;
-	font-size: 1.1rem;
-	border-top: 1.2px solid $color-primary-light;
-	display: inline-block;
+  max-width: 65%;
+  padding-top: 1rem;
+  font-size: 1.1rem;
+  border-top: 1.2px solid $color-primary-light;
+  display: inline-block;
 
-	@media only screen and (max-width: 432px) {
-		margin-top: 1.5rem;
-		font-size: 1.5rem;
-	}
+  @media only screen and (max-width: 432px) {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+  }
 
-	ul {
-		list-style: none;
+  ul {
+    list-style: none;
 
-		li {
-			display: flex;
+    li {
+      display: flex;
 
-			&:not(:last-child) {
-				margin-right: 1.5rem;
-			}
-		}
-	}
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+    }
+  }
 }
 
 .disclaimerWrapper {
-	width: 80%;
-	text-align: center;
-	display: inline-block;
-	@media only screen and (max-width: 432px) {
-		width: 100%;
-	}
+  width: 80%;
+  text-align: center;
+  display: inline-block;
+  @media only screen and (max-width: 432px) {
+    width: 100%;
+  }
 }
 
 .disclaimerText {
-	max-width: 80%;
-	padding-top: 1rem;
-	font-size: 1rem;
-	border-top: 1.2px solid $color-primary-light;
-	display: inline-block;
-	text-align: start;
+  max-width: 80%;
+  padding-top: 1rem;
+  font-size: 1rem;
+  border-top: 1.2px solid $color-primary-light;
+  display: inline-block;
+  text-align: start;
 }
 
 .link {
-	&:link,
-	&:visited {
-		color: $color-text;
-		text-decoration: none;
-		text-transform: uppercase;
-		display: inline-block;
-		transition: all 0.4s;
-	}
+  text-transform: uppercase;
+  color: $color-text;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all 0.4s;
 
-	&:hover,
-	&:active {
-		color: $color-primary-light;
-		box-shadow: 0 1rem 2rem rgba($color-primary, 0.3);
-		transform: translateY(-0.2rem);
-	}
+  &:hover,
+  &:active {
+    color: $color-primary-light;
+    box-shadow: 0 1rem 2rem rgba($color-primary, 0.3);
+    transform: translateY(-0.2rem);
+  }
 }
