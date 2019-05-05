@@ -1,54 +1,55 @@
 @import '../styling/colors.scss';
 
 .menuContainer {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	position: absolute;
-	top: 4rem;
-	right: 8rem;
-	@media only screen and (max-width: 768px) {
-		top: 2rem;
-		right: 4rem;
-	}
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 4rem;
+  right: 8rem;
+  @media only screen and (max-width: 768px) {
+    top: 2rem;
+    right: 4rem;
+  }
 }
 
 .menuList {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	margin-top: 1.5rem;
-	transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 1.5rem;
+  transition: all 0.5s;
 
-	a {
-		color: $color-text;
-		text-decoration: none; /* no underline */
-		@media only screen and (max-width: 768px) {
-			font-size: 2rem;
-			margin-bottom: 2rem;
-		}
+  a {
+    color: $color-text;
+    text-decoration: none; /* no underline */
+    transition: all 0.5s;
+    @media only screen and (max-width: 768px) {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
 
-		&:hover {
-			color: $color-primary;
-			text-decoration: underline;
-			transform: translateY(-0.5rem);
-		}
-	}
+    &:hover {
+      color: $color-primary;
+      text-decoration: underline;
+      transform: translateY(-0.5rem);
+    }
+  }
 }
 
 .menuButton {
-	text-decoration: none; /* no underline */
-	background-color: transparent;
-	border: none;
-	outline: none;
-	margin-bottom: 1rem;
-	transition: all 1s;
+  text-decoration: none; /* no underline */
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-bottom: 1rem;
+  transition: all 1s;
 
-	img {
-		height: 3rem;
+  img {
+    height: 3rem;
 
-		&:hover {
-			transform: translateY(0.2rem);
-		}
-	}
+    &:hover {
+      transform: translateY(0.2rem);
+    }
+  }
 }
