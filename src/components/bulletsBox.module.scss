@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 6rem;
 
   div:first-child {
     margin-right: 3rem;
@@ -8,6 +8,7 @@
 
   @media only screen and (max-width: 768px) {
     flex-wrap: wrap;
+    margin-top: 2rem;
 
     div:first-child {
       margin-right: 0rem;
@@ -38,5 +39,9 @@
 
   ul {
     text-align: left;
+
+    li {
+      margin-bottom: 1rem;
+    }
   }
 }
