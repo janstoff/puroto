@@ -29,7 +29,7 @@
     height: 10rem;
     border-radius: 12px;
 
-    @media only screen and (max-width: 432px) {
+    @media only screen and (max-width: 430px) {
       height: 8rem;
     }
   }
@@ -38,19 +38,19 @@
 .navWrapper {
   position: relative;
   width: 30%;
-  @media only screen and (max-width: 1824px) {
+  @media only screen and (max-width: 1820px) {
     left: 20%;
   }
-  @media only screen and (max-width: 1224px) {
+  @media only screen and (max-width: 1240px) {
     left: 25%;
   }
   @media only screen and (max-width: 1040px) {
     left: 28%;
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 760px) {
     left: 32%;
   }
-  @media only screen and (max-width: 432px) {
+  @media only screen and (max-width: 430px) {
     left: 35%;
   }
 }
@@ -62,7 +62,7 @@
   border-top: 1.2px solid $color-primary-light;
   display: inline-block;
 
-  @media only screen and (max-width: 432px) {
+  @media only screen and (max-width: 430px) {
     margin-top: 1.5rem;
     font-size: 1.5rem;
   }
@@ -84,7 +84,7 @@
   width: 80%;
   text-align: center;
   display: inline-block;
-  @media only screen and (max-width: 432px) {
+  @media only screen and (max-width: 430px) {
     width: 100%;
   }
 }

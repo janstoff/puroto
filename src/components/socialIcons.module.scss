@@ -1,19 +1,19 @@
 @import '../styling/colors.scss';
 
 .container {
-	display: inline-block;
-	position: absolute;
-	top: 4rem;
-	left: 14rem;
-	@media only screen and (max-width: 768px) {
-		top: 2rem;
-		left: 10rem;
-	}
+  display: inline-block;
+  position: absolute;
+  top: 4rem;
+  left: 14rem;
+  @media only screen and (max-width: 760px) {
+    top: 2rem;
+    left: 10rem;
+  }
 }
 
 .socialIcon {
-	padding: 1rem;
-	img {
-		height: 2.5rem;
-	}
+  padding: 1rem;
+  img {
+    height: 2.5rem;
+  }
 }
