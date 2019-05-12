@@ -11,9 +11,7 @@ export const BulletsBox = () => (
       <div key={audience} className={styles.bullets}>
         <p
           style={
-            audience === 'consumer'
-              ? {color: 'rgb(94, 75, 126)'}
-              : {color: 'rgb(159, 75, 111)'}
+            audience === 'consumer' ? {color: '#3e06d6'} : {color: '#e06872'}
           }
         >
           <Translated id={`about-bullet-${audience}-headline`} />
