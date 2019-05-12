@@ -5,6 +5,7 @@ import {
   addLocaleData,
   FormattedMessage as Translated
 } from 'react-intl';
+import CookieConsent from 'react-cookie-consent';
 
 //Config
 import {APP_NAME} from '../config';
@@ -54,6 +55,21 @@ const AppLayout: React.FunctionComponent<AppProps> = ({
         <meta charSet="utf-8" />
         <title>{APP_NAME}</title>
       </Helmet>
+      <CookieConsent
+        location="bottom"
+        buttonText="Ok!"
+        cookieName="consent cookie"
+        style={{background: '#5f5a5a'}}
+        buttonStyle={{
+          background: '#f5f5f5',
+          color: '#2c2b2b',
+          fontSize: '13px',
+          borderRadius: '5px'
+        }}
+        expires={150}
+      >
+        <Translated id="cookies-main" />
+      </CookieConsent>
       <Header locale={locale} />
       {children}
       <BackToTopLink />
