@@ -1,41 +1,41 @@
 {
-	"name": "puroto",
-	"private": true,
-	"description": "A Simple Contact Form WebApp built using GatsbyJS",
-	"version": "0.1.0",
-	"license": "MIT",
-	"scripts": {
-		"clean": "rimraf public/* .cache/*",
-		"build": "gatsby build",
-		"dev": "gatsby develop",
-		"start": "yarn develop",
-		"serve": "gatsby serve",
-		"test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-		"deploy": "yarn clean && gatsby build --prefix-paths && gh-pages -d public"
-	},
-	"dependencies": {
-		"@types/react-intl": "^2.3.17",
-		"@types/react-router-hash-link": "^1.2.1",
-		"gatsby": "^2.0.111",
-		"gatsby-plugin-manifest": "^2.0.20",
-		"gatsby-plugin-offline": "^2.0.24",
-		"gatsby-plugin-react-helmet": "^3.0.7",
-		"gatsby-plugin-sass": "^2.0.10",
-		"gatsby-plugin-typescript": "^2.0.9",
-		"node-sass": "^4.11.0",
-		"react": "^16.7.0",
-		"react-dom": "^16.7.0",
-		"react-helmet": "^5.2.0",
-		"react-intl": "^2.8.0",
-		"react-router-hash-link": "^1.2.1",
-		"smooth-scroll": "^15.0.0"
-	},
-	"devDependencies": {
-		"eslint": "^5.13.0",
-		"eslint-config-prettier": "^4.0.0",
-		"eslint-plugin-prettier": "^3.0.1",
-		"gh-pages": "^2.0.1",
-		"prettier": "^1.16.4",
-		"rimraf": "^2.6.3"
-	}
+  "name": "puroto",
+  "private": true,
+  "description": "A Simple Contact Form WebApp built using GatsbyJS",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf public/* .cache/*",
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "start": "yarn develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "deploy": "yarn clean && gatsby build && gh-pages -d public"
+  },
+  "dependencies": {
+    "@types/react-intl": "^2.3.17",
+    "@types/react-router-hash-link": "^1.2.1",
+    "gatsby": "^2.0.111",
+    "gatsby-plugin-manifest": "^2.0.20",
+    "gatsby-plugin-offline": "^2.0.24",
+    "gatsby-plugin-react-helmet": "^3.0.7",
+    "gatsby-plugin-sass": "^2.0.10",
+    "gatsby-plugin-typescript": "^2.0.9",
+    "node-sass": "^4.11.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-helmet": "^5.2.0",
+    "react-intl": "^2.8.0",
+    "react-router-hash-link": "^1.2.1",
+    "smooth-scroll": "^15.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "gh-pages": "^2.0.1",
+    "prettier": "^1.16.4",
+    "rimraf": "^2.6.3"
+  }
 }
